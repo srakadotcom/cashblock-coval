@@ -1,0 +1,44 @@
+plugins {
+    id 'java-library'
+    id "com.github.johnrengelman.shadow" version "6.1.0"
+}
+
+group 'pl.memexurer'
+version '1.0-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(16))
+    }
+}
+
+repositories {
+    mavenCentral()
+
+    maven {
+        name = 'spigotmc-repo'
+        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+        content {
+            includeGroup 'org.spigotmc'
+        }
+    }
+
+    maven {
+        url 'https://storehouse.okaeri.eu/repository/maven-public/'
+        content {
+            includeGroup 'eu.okaeri'
+        }
+    }
+
+    maven {
+        name = 'sonatype'
+        url = 'https://oss.sonatype.org/content/repositories/snapshots/'
+    }
+}
+
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT'
+    implementation 'eu.okaeri:okaeri-configs-yaml-bukkit:2+'
+    implementation 'eu.okaeri:okaeri-configs-serdes-bukkit:2+'
+}
