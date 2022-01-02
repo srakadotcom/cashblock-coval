@@ -3,6 +3,8 @@ package pl.memexurer.coval.configuration;
 import dev.triumphteam.gui.builder.item.ItemBuilder;
 import eu.okaeri.configs.OkaeriConfig;
 import eu.okaeri.configs.annotation.Comment;
+import eu.okaeri.configs.annotation.Exclude;
+import java.util.Arrays;
 import net.kyori.adventure.text.Component;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
@@ -48,4 +50,12 @@ public class PluginConfiguration extends OkaeriConfig {
     public String youLostBrush = "&cNie siadlo ci mordini, przez co dostajesz brusha o poziom mniejszego essa";
     @Comment("Wiadomosc gdy brush2x2 znika XDD")
     public String lost2x2 = "&cmordo masz takiego nie farta ze to chuj, straciles brusha XD";
+    @Comment("wiadomosc gdy zabiera kamien a nie brusha")
+    public String lostStone = "&dZabralo ci kamien tf tf";
+    @Comment("magic kamien kurwa")
+    @Exclude
+    public ItemStack magicStone = ItemBuilder.from(Material.STONE)
+        .name(Component.text(ChatHelper.colored("&dMagiczny Kamien")))
+        .lore(Arrays.asList(Component.text("XD"), Component.text("XD")))
+        .build();
 }

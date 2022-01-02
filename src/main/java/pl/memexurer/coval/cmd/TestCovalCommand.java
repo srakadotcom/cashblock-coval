@@ -13,6 +13,7 @@ public class TestCovalCommand implements CommandExecutor
   public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
     Player player = (Player) sender;
     CashblockCovalPlugin.getInstance().getCovalInventory().openCoval(player);
+    player.getInventory().addItem(CashblockCovalPlugin.getInstance().getConfiguration().brush2x2);
     return false;
   }
 }
