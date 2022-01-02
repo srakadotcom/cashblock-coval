@@ -34,6 +34,7 @@ repositories {
         name = 'sonatype'
         url = 'https://oss.sonatype.org/content/repositories/snapshots/'
     }
+    maven { url = "https://repo.mattstudios.me/artifactory/public/" }
 }
 
 
@@ -41,4 +42,5 @@ dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT'
     implementation 'eu.okaeri:okaeri-configs-yaml-bukkit:2+'
     implementation 'eu.okaeri:okaeri-configs-serdes-bukkit:2+'
+    implementation "dev.triumphteam:triumph-gui:3.0.5"
 }
