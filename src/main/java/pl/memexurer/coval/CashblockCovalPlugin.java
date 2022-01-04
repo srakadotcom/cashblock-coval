@@ -23,7 +23,6 @@ public class CashblockCovalPlugin extends JavaPlugin {
     public void onEnable() {
         covalInventory = new CovalInventory(this);
         getCommand("testcoval").setExecutor(new TestCovalCommand());
-        getLogger().info("Czy jestes niggerem: " + configuration.nigger);
     }
 
     public static CashblockCovalPlugin getInstance() {

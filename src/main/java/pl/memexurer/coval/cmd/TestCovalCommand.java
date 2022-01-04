@@ -14,6 +14,7 @@ public class TestCovalCommand implements CommandExecutor
     Player player = (Player) sender;
     CashblockCovalPlugin.getInstance().getCovalInventory().openCoval(player);
     player.getInventory().addItem(CashblockCovalPlugin.getInstance().getConfiguration().brush2x2);
+    player.getInventory().addItem(CashblockCovalPlugin.getInstance().getConfiguration().magicStone);
     return false;
   }
 }
