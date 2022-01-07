@@ -50,3 +50,9 @@ dependencies {
     implementation 'eu.okaeri:okaeri-configs-serdes-bukkit:3.4.2'
     implementation "dev.triumphteam:triumph-gui:3.0.5"
 }
+
+shadowJar {
+    relocate 'eu.okaeri', 'pl.memexurer.coval.okaeri'
+    relocate 'dev.triumphteam.triumph-gui', 'pl.memexurer.coval.gui'
+    relocate 'net.kyori', 'pl.memexurer.kyori'
+}
