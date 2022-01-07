@@ -27,9 +27,6 @@ public class RandomHelper {
     return chance >= 100.0 || chance >= getRandDouble(0.0, 100.0);
   }
 
-  public static void main(final String[] args) {
-  }
-
   public static double round(final double value, final int decimals) {
     final double p = Math.pow(10.0, decimals);
     return Math.round(value * p) / p;

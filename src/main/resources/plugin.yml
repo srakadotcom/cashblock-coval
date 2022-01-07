@@ -2,6 +2,3 @@ name: Cashblock-Covals
 version: 1.0
 main: pl.memexurer.coval.CashblockCovalPlugin
 description: Coval.
-
-commands:
-  testcoval:

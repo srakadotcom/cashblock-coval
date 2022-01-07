@@ -70,4 +70,6 @@ public class PluginConfiguration extends OkaeriConfig {
     public String youDontHaveKamien = "NIE MASZ KAMIENIA RURO";
     @Comment("wiadomosc gdy nie masz brusha w lapie")
     public String youDontHaveBrush = "MUSISZ MIEC BRUSHA W REKU";
+    @Comment("nazwa npcta")
+    public String npcName = "&6Kowalski";
 }
