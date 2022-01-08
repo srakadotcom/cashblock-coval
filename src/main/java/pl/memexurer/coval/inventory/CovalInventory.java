@@ -157,10 +157,8 @@ public class CovalInventory {
       player.getInventory().addItem(cashblockCovalPlugin.getConfiguration().brush2x2);
       ChatHelper.sendMessage(player, cashblockCovalPlugin.getConfiguration().youLostBrush);
     } else if (player.getItemInHand().isSimilar(cashblockCovalPlugin.getConfiguration().brush2x2)) {
-      if (RandomHelper.getChance(80)) {
-        player.getInventory().remove(cashblockCovalPlugin.getConfiguration().brush2x2);
-        ChatHelper.sendMessage(player, cashblockCovalPlugin.getConfiguration().lost2x2);
-      }
+      player.getInventory().remove(cashblockCovalPlugin.getConfiguration().brush2x2);
+      ChatHelper.sendMessage(player, cashblockCovalPlugin.getConfiguration().lost2x2);
     }
   }
 
@@ -218,10 +216,8 @@ public class CovalInventory {
       player.getInventory().remove(cashblockCovalPlugin.getConfiguration().magicStone);
       ChatHelper.sendMessage(player, cashblockCovalPlugin.getConfiguration().lostStone);
     } else if (player.getItemInHand().isSimilar(cashblockCovalPlugin.getConfiguration().brush2x2)) {
-      if (RandomHelper.getChance(80)) {
-        player.getInventory().remove(cashblockCovalPlugin.getConfiguration().magicStone);
-        ChatHelper.sendMessage(player, cashblockCovalPlugin.getConfiguration().lostStone);
-      }
+      player.getInventory().remove(cashblockCovalPlugin.getConfiguration().magicStone);
+      ChatHelper.sendMessage(player, cashblockCovalPlugin.getConfiguration().lostStone);
     }
   }
 }

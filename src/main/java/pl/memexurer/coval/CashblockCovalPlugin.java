@@ -41,7 +41,7 @@ public class CashblockCovalPlugin extends JavaPlugin implements Listener {
             ChatColor.translateAlternateColorCodes('&', configuration.npcName)
         )) {
       if(event.getPlayer().getItemInHand() == null || !isBrush(event.getPlayer().getItemInHand())) {
-        event.getPlayer().sendMessage(configuration.youDontHaveBrush);
+        ChatHelper.sendMessage(event.getPlayer(), configuration.youDontHaveBrush);
         return;
       }
       covalInventory.openCoval(event.getPlayer());
